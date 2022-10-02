@@ -1,0 +1,66 @@
+a.txt and b.txt file are created in the local machine and to add them 
+in the repository 
+
+We need to init the repository (git  init) to create a empty repository in workspace.
+
+the command is add the files to repository is ( git add a.txt b.txt ) 
+Thereafter use (git status) is used to check if they are in the repository or not.
+This will basically show the untracked files (they are in local machine but not in staging and repository).
+
+Now we need to commit the files.
+So we need to config some required details.(email ,username):
+
+git config --global user.email "sarojgope3425@gmail.com"
+git config --global user.name "saroj"
+
+So now we can commit .
+Here we need a comment to commit.
+git commit -m "this is my first commit"
+check (git status)
+
+git log (This will show how many commit have you done earlier).
+
+Agar kuch file me changes kiye ho to local repository me saved nahi honji
+so first add them and do commit.  (git commit -a -m "both are modified").
+
+----------------------=============================================--------------------------------------------
+
+
+Working Directory  ----------------> Stagging --------------------->            Local Repository    ------------->  Remote Repository
+(Your working space)            (Before commiting put them in stagging area)    (Commit them )                        (Push them into remote repository)
+
+
+vim index.txt (Ek text editor will open and write the details.) ==> This is in working directory
+git init (Initilize a empty git repository)
+git add .  (It will be updated in stagging area)
+git status  (commited)
+
+REQ1 : To see the difference between Working Area and Staging Area ?
+
+diff --git a/index.txt b/index.txt
+index 4e9db3d..d899d46 100644
+--- a/index.txt
++++ b/index.txt
+@@ -2,3 +2,5 @@ animals
+ are good
+ pets.:
+
+
+a/index.txt  --> represents source (staging area)
+b/index.txt  --> represents destination (working dir)
+
+4e9db3d      --> Hash of File content from source/staging
+d899d46      --> Hash of File content from destination/workspace
+
+100644       --> git file mode
+               100  -- represent type of the file
+               644  -- File permissions(Readwrite,read,read  = rw-r-r)
+
+--- a/index.txt Source File missing some lines (Stagging)
++++ b/index.txt New Lines added in destination file (Working dir)
+ 
+After staging area if we commit then the file will be transfered into Local Repository.
+
+
+
+

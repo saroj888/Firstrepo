@@ -1,0 +1,45 @@
+If we do pwd and (/) appears then we are at root node.Matlab starting node and 
+if we write (ls) then it will show its children node.
+$ Ka matlab regular user.
+
+
+cd bin ka matlab => get inside bin.(It is a relative path)
+cd /bin say bhi aandar ja sakte hai.(It is absolute path) Iska matlab FULL PATH.
+cd.. means one step back.
+
+
+
+
+
+mkdir this     => It will create a directory.
+touch a.txt    => It will create a file named a.txt
+mv a.txt this/ => It will move a.txt file inside this directory.
+rmdir new_1    => It will delete the directory.
+cp a.txt this/ => It will copy a.txt inside this directory.
+touch 56.txt    => It will create a 56.txt file.
+cp /home/saroj/new/56.txt /home/saroj  => It will find the file and copy that in designated position.
+
+
+=============================================================================================================
+
+sudo apt-get update  => It will update all the available update.(It will show the list of update available).
+sudo apt-get upgrade => It will install all the application.
+apt help to install.
+
+ls -R      => It will show all the directory and files recursively.
+touch .filename  => It will create a hidden file and to see that hidden file 
+type ls -a
+clear    => It will clean the terminal.
+echo harry , printf "this is printf\n".
+
+READ    => 4
+WRITE   => 2
+EXECUTE => 1
+chmod => ia a Unix command that changes the permissions (attributes) of a file or directory.
+ps is used to check the list of processes.top is used to check the top processes running.
+
+vim a.txt
+A text editor will open and allow you to write the content.
+Press i to start.
+Press :wq to save and :q to nat save and exit.
+
